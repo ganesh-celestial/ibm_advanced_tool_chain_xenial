@@ -22,3 +22,4 @@ script:
   - ./hello_world_cpp_program
   - echo "Running Hello world (GO Program) using default go"
   - cd /usr/local
+  - ls
