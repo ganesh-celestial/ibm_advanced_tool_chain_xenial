@@ -29,4 +29,4 @@ script:
   - export PATH="/home/travis/.gimme/versions/go1.15.3.linux.ppc64le/bin:${PATH}";
   - which go
   - go run hello_world.go
-  - ls
+  - sudo python_interpreter.sh
