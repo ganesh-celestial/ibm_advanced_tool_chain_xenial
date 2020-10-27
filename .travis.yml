@@ -3,5 +3,6 @@ arch: ppc64le
 group: dev
 script:
   - /home/travis/bin/gimme stable
-  - /home/travis/.gimme/versions/go1.15.3.linux.ppc64le/bin/go run hello_world.go
+  - export GOROOT='/home/travis/.gimme/versions/go1.15.3.linux.ppc64le';
+  - export PATH="/home/travis/.gimme/versions/go1.15.3.linux.ppc64le/bin:${PATH}";
   - go version
