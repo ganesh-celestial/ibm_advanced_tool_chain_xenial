@@ -2,4 +2,4 @@ dist: xenial
 arch: ppc64le
 group: dev
 script:
-  - gimme --list
+  - /usr/local/gimme --list
