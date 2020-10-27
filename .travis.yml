@@ -2,6 +2,7 @@ dist: xenial
 arch: ppc64le
 group: dev
 script:
+  - ls /home/travis/.gimme
   - /home/travis/bin/gimme stable
   - export GOROOT='/home/travis/.gimme/versions/go1.15.3.linux.ppc64le';
   - export PATH="/home/travis/.gimme/versions/go1.15.3.linux.ppc64le/bin:${PATH}";
