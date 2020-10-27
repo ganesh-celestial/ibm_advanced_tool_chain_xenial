@@ -2,10 +2,5 @@ dist: xenial
 arch: ppc64le
 group: dev
 script:
-  - echo $HOME
-  - echo $GOPATH
-  - echo $GOHOME
-  - echo $GOROOT
-  - ls -al $HOME
-  - ls -al $HOME/bin
+  - ls -al $HOME/bin/gimme
   - ls ${HOME}/.gimme/versions
