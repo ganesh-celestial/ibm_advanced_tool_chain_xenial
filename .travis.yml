@@ -12,10 +12,8 @@ script:
   - echo "Running Hello world (GO Program) using IBM advanced tool chain gccgo compiler"
   - /opt/at12.0/bin/gccgo hello_world.go -o hello_world_go_program
   - ./hello_world_go_program
-  - which node
-  - echo "Running Hello world (Nodejs Program)"
-  - node programs/hello_world.js
-  - rm -rf programs/hello_world_c_program programs/hello_world_cpp_program hello_world_go_program
+  - echo "Running Hello world (GO Program) using default python"
+  - python programs/hello_world.py
   - echo "Running Hello world (C program) using default gcc compiler"
   - which gcc
   - gcc programs/hello_world.c -o hello_world_c_program
