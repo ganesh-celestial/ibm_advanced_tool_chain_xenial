@@ -21,5 +21,5 @@ script:
   - g++ hello_world.cpp -o hello_world_cpp_program
   - ./hello_world_cpp_program
   - echo "Running Hello world (GO Program) using default gccgo compiler"
-  - gccgo hello_world.go -o hello_world_go_program
+  - go run hello_world.go 
   - ./hello_world_go_program
