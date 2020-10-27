@@ -3,4 +3,5 @@ arch: ppc64le
 group: dev
 script:
   - /home/travis/bin/gimme stable
-  - /home/travis/.gimme/versions/go1.15.3.linux.ppc64le --version
+  - cd /home/travis/.gimme/versions/go1.15.3.linux.ppc64le
+  - ls
