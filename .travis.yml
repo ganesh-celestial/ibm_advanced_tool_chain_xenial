@@ -20,6 +20,5 @@ script:
   - echo "Running Hello world (C++ Program) using default g++ compiler"
   - g++ hello_world.cpp -o hello_world_cpp_program
   - ./hello_world_cpp_program
-  - echo "Running Hello world (GO Program) using default gccgo compiler"
-  - go run hello_world.go 
-  - ./hello_world_go_program
+  - echo "Running Hello world (GO Program) using default go"
+  - go version
