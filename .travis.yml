@@ -18,16 +18,12 @@ script:
   - rm -rf programs/hello_world_c_program programs/hello_world_cpp_program hello_world_go_program
   - echo "Running Hello world (C program) using default gcc compiler"
   - which gcc
-  - gcc hello_world.c -o hello_world_c_program
+  - gcc programs/hello_world.c -o hello_world_c_program
   - ./hello_world_c_program
   - echo "Running Hello world (C++ Program) using default g++ compiler"
   - which g++
-  - g++ hello_world.cpp -o hello_world_cpp_program
+  - g++ programs/hello_world.cpp -o hello_world_cpp_program
   - ./hello_world_cpp_program
   - echo "Running Hello world (GO Program) using default go"
-  - /home/travis/bin/gimme stable
-  - export GOROOT='/home/travis/.gimme/versions/go1.15.3.linux.ppc64le';
-  - export PATH="/home/travis/.gimme/versions/go1.15.3.linux.ppc64le/bin:${PATH}";
-  - which go
   - go run hello_world.go
   - sudo sh python_interpreter.sh
