@@ -3,3 +3,5 @@ arch: ppc64le
 group: dev
 script:
   - $HOME/bin/gimme --list
+  - cd /home/travis/.gimme
+  - ls
