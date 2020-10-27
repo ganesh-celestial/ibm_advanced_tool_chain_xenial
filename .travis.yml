@@ -2,5 +2,4 @@ dist: xenial
 arch: ppc64le
 group: dev
 script:
-  - /home/travis/bin/gimme --list
-  - ls
+  - /home/travis/bin/gimme -f 1.4.1
