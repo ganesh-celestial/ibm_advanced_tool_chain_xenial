@@ -2,4 +2,4 @@ dist: xenial
 arch: ppc64le
 group: dev
 script:
-  - find / -name "go"
+  - gimme --list
