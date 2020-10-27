@@ -21,4 +21,4 @@ script:
   - g++ hello_world.cpp -o hello_world_cpp_program
   - ./hello_world_cpp_program
   - echo "Running Hello world (GO Program) using default go"
-  - which go
+  - cd /usr/local
