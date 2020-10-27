@@ -2,5 +2,4 @@ dist: xenial
 arch: ppc64le
 group: dev
 script:
-  - sudo cd ~/.gimme
-  - sudo ls
+  - ls -alR $HOME
