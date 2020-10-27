@@ -3,3 +3,5 @@ arch: ppc64le
 group: dev
 script:
   - /home/travis/bin/gimme stable
+  - export GIMME_ENV="/home/travis/.gimme/envs/go1.15.3.env"
+  - go version
