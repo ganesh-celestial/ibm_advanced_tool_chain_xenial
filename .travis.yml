@@ -2,5 +2,4 @@ dist: xenial
 arch: ppc64le
 group: dev
 script:
-  - ls -al $HOME/bin/gimme
-  - ls ${HOME}/.gimme/versions
+  - find / -name "go"
