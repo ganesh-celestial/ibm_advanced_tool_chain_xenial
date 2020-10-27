@@ -2,4 +2,4 @@ dist: xenial
 arch: ppc64le
 group: dev
 script:
-  - go run hello_world.go lint
+  - $HOME/bin/gimme -l
