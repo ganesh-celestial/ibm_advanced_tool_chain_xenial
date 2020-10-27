@@ -2,5 +2,5 @@ dist: xenial
 arch: ppc64le
 group: dev
 script:
-  - cd /home/travis/gopath/bin
+  - cd /home/travis
   - ls
