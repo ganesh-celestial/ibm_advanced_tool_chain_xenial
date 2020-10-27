@@ -1,20 +1,21 @@
 dist: xenial
 arch: ppc64le
+language: go
 group: dev
 script:
   - echo "Running Hello world (C program) using IBM advanced tool chain gcc compiler"
-  - /opt/at12.0/bin/gcc hello_world.c -o hello_world_c_program
+  - /opt/at12.0/bin/gcc programs/hello_world.c -o hello_world_c_program
   - ./hello_world_c_program
   - echo "Running Hello world (C++ Program) using IBM advanced tool chain g++ compiler"
-  - /opt/at12.0/bin/g++ hello_world.cpp -o hello_world_cpp_program
+  - /opt/at12.0/bin/g++ programs/hello_world.cpp -o hello_world_cpp_program
   - ./hello_world_cpp_program
   - echo "Running Hello world (GO Program) using IBM advanced tool chain gccgo compiler"
   - /opt/at12.0/bin/gccgo hello_world.go -o hello_world_go_program
   - ./hello_world_go_program
   - which node
   - echo "Running Hello world (Nodejs Program)"
-  - node hello_world.js
-  - rm -rf hello_world_c_program hello_world_cpp_program hello_world_go_program
+  - node programs/hello_world.js
+  - rm -rf programs/hello_world_c_program programs/hello_world_cpp_program hello_world_go_program
   - echo "Running Hello world (C program) using default gcc compiler"
   - which gcc
   - gcc hello_world.c -o hello_world_c_program
