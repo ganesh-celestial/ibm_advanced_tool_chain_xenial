@@ -4,7 +4,7 @@ pipeline {
     stage ('Initialize') {
       steps {
         echo 'Placeholder.'
-        sleep 5
+        sleep 30
       }
     }
   }
