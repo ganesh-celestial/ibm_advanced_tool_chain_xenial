@@ -11,3 +11,9 @@ echo "ganesh $(uuidgen)" > ganesh_test.txtt
 git add .
 git commit -m "$commit_message"
 git push origin ganesh-test
+
+git checkout ganesh-test1
+echo "ganesh $(uuidgen)" > ganesh_test.txtt
+git add .
+git commit -m "$commit_message"
+git push origin ganesh-test1
